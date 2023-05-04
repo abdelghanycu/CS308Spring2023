@@ -14,11 +14,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "employees", schema = "hr")
+@Table(name = "employees", schema = "public")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@SequenceGenerator(name="employees_gen", sequenceName="hr.employees_seq", allocationSize = 1)
+@SequenceGenerator(name="employees_gen", sequenceName="employees_employee_id_seq", allocationSize = 1)
 public class Employee implements Serializable {
 
   @Id
